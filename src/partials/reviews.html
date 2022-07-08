@@ -1,8 +1,15 @@
 <section class="reviews">
   <div class="container">
     <h2 class="reviews__title">Reviews</h2>
-    <article class="reviews-item">
+    <article class="reviews__item reviews__item--hiden">
       <picture class="reviews__img">
+        <source
+          srcset="
+            ./images/rewievs/reviews-1-lg.png    1x,
+            ./images/rewievs/reviews-1-lg@2x.png 2x
+          "
+          media="(min-width:1280px)"
+        />
         <source
           srcset="
             ./images/rewievs/reviews-1-md.png    1x,
@@ -32,9 +39,17 @@
         kitchen! Thank you so much for the masterclass! Looking forward to the
         next one and highly recommend it to everyone!
       </p>
+      <p class="reviews__switch"><span class="switch__icon"> 2/15</span></p>
     </article>
-    <article class="reviews-item">
+    <article class="reviews__item">
       <picture class="reviews__img">
+        <source
+          srcset="
+            ./images/rewievs/reviews-1-lg.png    1x,
+            ./images/rewievs/reviews-1-lg@2x.png 2x
+          "
+          media="(min-width:1280px)"
+        />
         <source
           srcset="
             ./images/rewievs/reviews-1-sm.png    1x,
@@ -65,12 +80,12 @@
       </p>
       <p class="reviews__switch">2/15</p>
     </article>
-    <article class="reviews-item">
+    <article class="reviews__item">
       <picture class="reviews__img">
         <source
           srcset="
-            ./images/rewievs/reviews-3-md.png    1x,
-            ./images/rewievs/reviews-3-md@2x.png 2x
+            ./images/rewievs/reviews-3-lg.png    1x,
+            ./images/rewievs/reviews-3-lg@2x.png 2x
           "
           media="(max-width:768px)"
         />
@@ -95,6 +110,7 @@
         kitchen! Thank you so much for the masterclass! Looking forward to the
         next one and highly recommend it to everyone!
       </p>
+      <p class="reviews__switch">2/15</p>
     </article>
   </div>
 </section>
