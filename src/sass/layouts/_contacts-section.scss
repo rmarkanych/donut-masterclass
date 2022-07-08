@@ -1,0 +1,66 @@
+.contact{
+   text-align: center;
+}
+.contact_container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+}
+.contact__title{
+   width: 102px;
+   height: 45px;
+   font-family: 'Caveat Brush';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 45px;
+   color: #2E2520;
+}
+.contact__text{
+   white-space: nowrap;
+   width: 261px;
+   height: 22px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 22px;
+   text-align: center;
+   color: #2E2520;
+   padding-top: 20px;
+}
+.contact__input{
+   border-right: none; border-left: none; border-top: none;
+   border: 1px solid rgba(171, 129, 108, 1),; 
+   width: 394px;
+   height: 22px;
+   padding-top: 16px;
+}
+.contact__input::-webkit-input-placeholder{
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: rgba(171, 129, 108, 0.5);
+}
+.contact__button{
+   width: 182px;
+   height: 45px;
+   background: #AB816C;
+   border-radius: 25px;
+   font-family: 'Caveat Brush';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 30px;
+   text-align: center;
+   color: rgba(255, 255, 255, 1);
+   margin-top: 32px;
+}
+.contact__form{
+   display: flex;
+   flex-direction: column;
+   padding-top: 16px;
+}
