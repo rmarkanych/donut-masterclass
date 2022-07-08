@@ -1,26 +1,21 @@
+body {
+  background-color: var(--bg-color);
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--primary-text-color);
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
 h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
+h2 {
+  font-family: 'Caveat Brush';
+  font-weight: 400;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+h3 {
+  font-style: italic;
 }
