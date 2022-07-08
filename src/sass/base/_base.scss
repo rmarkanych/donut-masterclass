@@ -11,26 +11,26 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 
-  background-image: url(../images/rewievs/rewievs-bg-lg.png),
+  background-image: url(../images/rewievs/reviews-bg-1-sm.png),
                     url(../images/header/header-bg-1-sm.png);
 
       @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url(../images/rewievs/rewievs-bg-lg@2x.png),
+        background-image: url(../images/rewievs/reviews-bg-1-sm@2x.png),
                           url(../images/header/header-bg-1-sm@2x.png);
       }
   
 
   // tablet scren
     @media screen and (min-width:768px) {
-      background-image: url(../images/rewievs/rewievs-bg-lg.png)
+      background-image: url(../images/rewievs/reviews-bg-1-md.png)
                         url(../images/header/header-bg-1-md.png);
   
       @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image: url(../images/rewievs/rewievs-bg-lg@2x.png),
+        background-image: url(../images/rewievs/reviews-bg-1-md@2x.png),
                           url(../images/header/header-bg-1-md@2x.png);
       }
     }
