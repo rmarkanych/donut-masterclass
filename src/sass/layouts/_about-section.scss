@@ -1,0 +1,67 @@
+.about__container {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 150px;
+        background-image: url('../images/about-us/about-us-spoon-lg.png');
+        background-repeat: no-repeat;
+        
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url('../images/about-us/about-us-spoon-lg@2x.png');
+            }
+        }
+}
+
+.about__picture {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        width: 336px;
+    }
+}
+
+.about__title {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.25;
+
+    @media screen and (min-width: 768px) {
+            margin-bottom: 16px;
+            text-align: left;
+            font-size: 24px;
+            line-height: 1.25;
+        }
+    @media screen and (min-width: 1280px) {
+            margin-bottom: 20px;
+            font-size: 36px;
+            line-height: 1.25;
+        }
+    }
+
+.about__article {
+    @media screen and (min-width: 768px) {
+        width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 392px;
+    }
+}
+
+.about__text {
+    font-size: 16px;
+    line-height: 1.25;
+
+    @media screen and (min-width: 1280px) {
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
