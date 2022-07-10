@@ -1,21 +1,12 @@
 .about__container {
-    @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-between;
-    }
+        align-items: center;
+        position: relative;
 
-    @media screen and (min-width: 1280px) {
-        padding-top: 150px;
-        background-image: url('../images/about-us/about-us-spoon-lg.png');
-        background-repeat: no-repeat;
-        
-        @media (min-device-pixel-ratio: 2),
-            (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi),
-            (min-resolution: 2dppx) {
-            background-image: url('../images/about-us/about-us-spoon-lg@2x.png');
-            background-size: 145px;        }
-        }
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
 }
 
 .about__picture {
@@ -29,6 +20,22 @@
 
     @media screen and (min-width: 1280px) {
         width: 502px;
+    }
+}
+
+.about__spoon {
+    display: none;
+
+    @media screen and (min-width: 1280px) {
+       display: block;
+       position: absolute;
+       top: -30px;
+       left: -120px;
+       transition: transform 0.5s ease;
+
+    &:hover {
+        transform: rotate(20deg);
+    }
     }
 }
 

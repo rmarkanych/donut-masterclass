@@ -123,7 +123,7 @@
     transition: transform 0.5s ease 0.5s;
     
     .program__plate:hover & {
-    transform: rotate(-180deg);
+    transform: rotate(-360deg);
     }
 }
 
