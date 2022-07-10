@@ -1,0 +1,112 @@
+.speakers {
+  width: calc(100% - 40px);
+  @media screen and (min-width: 768px) {
+    background-color: var(--bg-secondary-color);
+    width: calc(100% - 64px);
+    border-radius: 40px;
+    padding-bottom: 29px;
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../images/speakers/Vector@2x.png);
+  }
+}
+
+.speakers__title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.25;
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 36px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 8px;
+  }
+}
+
+.speakers__list {
+  padding-top: 82px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 32px;
+  column-gap: 20px;
+  margin: 0 auto;
+
+  padding-bottom: 29px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 122px;
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+  @media screen and (max-width: 768px) {
+    background-color: var(--bg-secondary-color);
+    border-radius: 20px;
+    padding-bottom: 40px;
+
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url(../images/speakers/Vector.png);
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 179px;
+    gap: 103px;
+    padding-left: 107px;
+    padding-right: 107px;
+  }
+}
+
+.speakers__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc((100% - 20px) / 2);
+}
+
+.speakers__img {
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.speakers__name {
+  width: 130px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+    width: 152px;
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 181px;
+  }
+}
+
+.speekers__txt {
+  width: 130px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    width: 152px;
+    line-height: 1.21;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 16px;
+    width: 181px;
+    line-height: 1.2;
+  }
+}
