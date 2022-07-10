@@ -2,10 +2,13 @@
    text-align: center;
 }
 .contact_container{
+   text-align: center;
    display: flex;
+   justify-content: center;
    flex-direction: column;
    align-items: center;
-
+   width: 100%;
+   text-align: center;
 }
 .contact__title{
    width: 102px;
@@ -31,11 +34,14 @@
    padding-top: 20px;
 }
 .contact__input{
-   border-right: none; border-left: none; border-top: none;
+   background: rgba(255, 255, 249, 1);
    border: 1px solid rgba(171, 129, 108, 1),; 
    width: 394px;
    height: 22px;
-   padding-top: 16px;
+   margin-top: 16px;
+   border-right: none;
+   border-left: none;
+   border-top: none;
 }
 .contact__input::-webkit-input-placeholder{
    font-family: 'Montserrat';
@@ -46,6 +52,7 @@
    color: rgba(171, 129, 108, 0.5);
 }
 .contact__button{
+   cursor: pointer;
    width: 182px;
    height: 45px;
    background: #AB816C;
