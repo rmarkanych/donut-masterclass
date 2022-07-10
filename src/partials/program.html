@@ -1,7 +1,7 @@
 <!-- Program -->
 <section class="program" id="program">
   <div class="program__container container">
-    <article class="program__article">
+    <div class="program__article">
       <h2 class="program__title">Program</h2>
       <p class="program__text">
         Indulge in this immersive sweet treat experience with The Chef Donut
@@ -11,41 +11,43 @@
         <li class="program__item">A stand up history of donuts</li>
         <li class="program__item">Make 3 donut flavors of your choice</li>
         <li class="program__item">Enjoy all-you-can-eat donuts</li>
-        <li class="program__item">
-          Cocktail pairings and coffee included
-        </li>
-        <li class="program__item">
-          Photoshoot by professional photographer
-        </li>
+        <li class="program__item">Cocktail pairings and coffee included</li>
+        <li class="program__item">Photoshoot by professional photographer</li>
         <li class="program__item">Secret receipt of cooking from Eva</li>
-        <li class="program__item">
-          All products are included in the price
-        </li>
+        <li class="program__item">All products are included in the price</li>
       </ul>
       <p class="program__text">
         Come with your dear people and friends and you will spend an
         unforgettable time and will become a real professional in donuts
         cooking!
       </p>
-    </article>
+    </div>
     <ul class="program__plates">
       <li class="program__plate">
-        <img
-          class="program__picture"
-          srcset="
-            ./images/program/program-1-sm.png 77w,
-            ./images/program/program-1-sm@2x.png 144w,
-            ./images/program/program-1-md.png 82w,
-            ./images/program/program-1-md@2x.png 164w,
-            ./images/program/program-1-lg.png 97w,
-            ./images/program/program-1-lg@2x.png 194w
-          "
-          sizes="(min-width: 1280px) 97px, (min-width: 768px) 82px, 100vw"
-          src="./images/program/program-1-sm.png"
-          alt="donut1"
-          width="97"
-          height="107"
-        />
+        <picture class="program__picture">
+          <source
+            srcset="
+              ./images/program/program-1-lg.png    1x,
+              ./images/program/program-1-lg@2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/program/program-1-md.png    1x,
+              ./images/program/program-1-md@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/program/program-1-sm.png    1x,
+              ./images/program/program-1-sm@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/program/program-1-sm.png" alt="donut1" />
+        </picture>
         <h3 class="program__subtitle">Type of the event</h3>
         <p class="program__description">Cooking classes</p>
         <svg class="program__icon" width="19" height="19">
@@ -54,22 +56,30 @@
         <div class="program__background"></div>
       </li>
       <li class="program__plate">
-        <img
-          class="program__picture"
-          srcset="
-            ./images/program/program-2-sm.png 75w,
-            ./images/program/program-2-sm@2x.png 150w,
-            ./images/program/program-2-md.png 69w,
-            ./images/program/program-2-md@2x.png 138w,
-            ./images/program/program-2-lg.png 83w,
-            ./images/program/program-2-lg@2x.png 166w
-          "
-          sizes="(min-width: 1280px) 83px, (min-width: 768px) 69px, 100vw"
-          src="./images/program/program-2-sm.png"
-          alt="donut2"
-          width="83"
-          height="92"
-        />
+        <picture class="program__picture">
+          <source
+            srcset="
+              ./images/program/program-2-lg.png    1x,
+              ./images/program/program-2-lg@2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/program/program-2-md.png    1x,
+              ./images/program/program-2-md@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/program/program-2-sm.png    1x,
+              ./images/program/program-2-sm@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/program/program-2-sm.png" alt="donut2" />
+        </picture>
         <h3 class="program__subtitle">Number of guests</h3>
         <p class="program__description">1 to 20</p>
         <svg class="program__icon" width="19" height="19">
@@ -78,22 +88,30 @@
         <div class="program__background"></div>
       </li>
       <li class="program__plate">
-        <img
-          class="program__picture"
-          srcset="
-            ./images/program/program-3-sm.png 78w,
-            ./images/program/program-3-sm@2x.png 156w,
-            ./images/program/program-3-md.png 74w,
-            ./images/program/program-3-md@2x.png 148w,
-            ./images/program/program-3-lg.png 88w,
-            ./images/program/program-3-lg@2x.png 176w
-          "
-          sizes="(min-width: 1280px) 88px, (min-width: 768px) 74px, 100vw"
-          src="./images/program/program-3-sm.png"
-          alt="donut3"
-          width="88"
-          height="97"
-        />
+        <picture class="program__picture">
+          <source
+            srcset="
+              ./images/program/program-3-lg.png    1x,
+              ./images/program/program-3-lg@2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/program/program-3-md.png    1x,
+              ./images/program/program-3-md@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/program/program-3-sm.png    1x,
+              ./images/program/program-3-sm@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/program/program-3-sm.png" alt="donut3" />
+        </picture>
         <h3 class="program__subtitle">Time of the event</h3>
         <p class="program__description">18:30 (2.5 hours)</p>
         <svg class="program__icon" width="19" height="19">
@@ -102,22 +120,30 @@
         <div class="program__background"></div>
       </li>
       <li class="program__plate">
-        <img
-          class="program__picture"
-          srcset="
-            ./images/program/program-4-sm.png 74w,
-            ./images/program/program-4-sm@2x.png 148w,
-            ./images/program/program-4-md.png 70w,
-            ./images/program/program-4-md@2x.png 140w,
-            ./images/program/program-4-lg.png 83w,
-            ./images/program/program-4-lg@2x.png 166w
-          "
-          sizes="(min-width: 1280px) 83px, (min-width: 768px) 70px, 100vw"
-          src="./images/program/program-4-sm.png"
-          alt="donut4"
-          width="83"
-          height="92"
-        />
+        <picture class="program__picture">
+          <source
+            srcset="
+              ./images/program/program-4-lg.png    1x,
+              ./images/program/program-4-lg@2x.png 2x
+            "
+            media="(min-width:1280px)"
+          />
+          <source
+            srcset="
+              ./images/program/program-4-md.png    1x,
+              ./images/program/program-4-md@2x.png 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./images/program/program-4-sm.png    1x,
+              ./images/program/program-4-sm@2x.png 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img src="./images/program/program-4-sm.png" alt="donut4" />
+        </picture>
         <h3 class="program__subtitle">The host speaks</h3>
         <p class="program__description">English, French</p>
         <svg class="program__icon" width="19" height="19">

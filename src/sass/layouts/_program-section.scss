@@ -119,6 +119,14 @@
     }
 }
 
+.program__picture {
+    transition: transform 0.5s ease 0.5s;
+    
+    .program__plate:hover & {
+    transform: rotate(-180deg);
+    }
+}
+
 .program__plate:nth-child(2n) {
     margin-top: 37px;
 
@@ -179,6 +187,7 @@
     z-index: -1;
     background-color: var(--bg-secondary-color);
     box-shadow: 0px 4px 4px rgba(171, 129, 108, 0.25);
+    transition: transform 0.5s ease;
 
     @media screen and (min-width: 768px) {
         width: 152px;
@@ -189,4 +198,8 @@
         width: 180px;
         height: 180px;
     }
+}
+
+.program__plate:hover .program__background {
+    transform: scale(1.3);
 }
