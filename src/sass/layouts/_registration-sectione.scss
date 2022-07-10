@@ -19,6 +19,7 @@
    text-align: center;
    display: flex;
    align-items: center;
+   justify-content: center;
    flex-shrink: 3;
    width: 822px;
    height: 246px;
@@ -37,7 +38,7 @@
    line-height: 24px;
    text-align: right;
    color: #2E2520;
-   padding-left: 107px;
+   justify-content: center;
 }
 .line__element{/*второй*/
    width: 166px;
@@ -46,7 +47,7 @@
    border: 1px solid rgba(171, 129, 108, 0.5);
    transform: rotate(90deg);
    flex-basis: auto;
-   margin-left: -45px;
+   // margin-left: -45px;
 }
 .element__container{/*третий*/
    display: flex; 
@@ -86,11 +87,12 @@
 }
 .registration__input{
    height: 22px;
-   border-right: none; 
-   border-left: none; 
-   border-top: none;
    border: 1px solid rgba(171, 129, 108, 1),;
    width: 234px;
+   border-top: none;
+   border-left: none;
+   border-right: none;
+   background: rgba(255, 255, 249, 1);
 }
 .registration__button{
    width: 158px;
@@ -105,8 +107,10 @@
    line-height: 30px;
    text-align: center;
    color: #FFFFFF;
+   margin-top: 28px;
+   margin-left: 28px;
 }
-.button__element{
-   padding-top: 51px;
-   padding-left: 28px;
-}
+// .button__element{
+//    padding-top: 51px;
+//    padding-left: 28px;
+// }
