@@ -76,6 +76,7 @@
    flex-direction: column;
    padding-bottom: 25px; 
    padding-left: 2px;
+
 }
 .registration__input::-webkit-input-placeholder{
    font-family: 'Montserrat';
@@ -95,6 +96,7 @@
    background: rgba(255, 255, 249, 1);
 }
 .registration__button{
+   border: none;
    width: 158px;
    height: 45px;
    background: #AB816C;
