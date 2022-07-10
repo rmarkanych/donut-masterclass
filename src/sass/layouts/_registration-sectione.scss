@@ -1,0 +1,112 @@
+.registration{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   text-align: center;
+}
+.registration__title{/*Заголовок*/
+   text-align: center;
+   font-family: 'Caveat Brush';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 36px;
+   line-height: 65px;
+   color: #2E2520;
+}
+.registration__container{/*Главный контейнер секции*/
+   text-align: center;
+   display: flex;
+   align-items: center;
+   flex-shrink: 3;
+   width: 822px;
+   height: 246px;
+   background-color:#FFFFF9;;
+   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 
+   4px 4px 4px rgba(171, 129, 108, 0.15);
+   border-radius: 150px;
+}
+.date__element{/*Первый элемент*/
+   width: 127px;
+   height: 48px;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 24px;
+   text-align: right;
+   color: #2E2520;
+   padding-left: 107px;
+}
+.line__element{/*второй*/
+   width: 166px;
+   height: 0px;
+   left: 492px;
+   border: 1px solid rgba(171, 129, 108, 0.5);
+   transform: rotate(90deg);
+   flex-basis: auto;
+   margin-left: -45px;
+}
+.element__container{/*третий*/
+   display: flex; 
+   flex-direction: column;
+   justify-content: space-around;
+   flex-basis: auto;
+   margin-left: -60px;
+ }
+ .registration__text{
+   width: 238px;
+   height: 44px;
+   /* padding-bottom: 10px; */
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 22px;
+   color: #2E2520;
+   text-align: start;
+}
+.registration__text + .registration__form{
+   padding-top: 30px;
+}
+.registration__form{/*Форма*/
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 25px; 
+   padding-left: 2px;
+}
+.registration__input::-webkit-input-placeholder{
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 20px;
+   color: rgba(171, 129, 108, 0.5);
+}
+.registration__input{
+   height: 22px;
+   border-right: none; 
+   border-left: none; 
+   border-top: none;
+   border: 1px solid rgba(171, 129, 108, 1),;
+   width: 234px;
+}
+.registration__button{
+   width: 158px;
+   height: 45px;
+   background: #AB816C;
+   border-radius: 25px;
+   
+   font-family: 'Caveat Brush';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 24px;
+   line-height: 30px;
+   text-align: center;
+   color: #FFFFFF;
+}
+.button__element{
+   padding-top: 51px;
+   padding-left: 28px;
+}
