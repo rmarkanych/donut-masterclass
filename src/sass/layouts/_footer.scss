@@ -21,8 +21,10 @@
     }
   }
   @media screen and(min-width:1280px) {
-    padding-bottom: 232px;
-    background-position: right 0 bottom 43px;
+    // padding-bottom: 75px;
+    // background-position: right 0 bottom 43px;
+
+    padding-bottom: 194px;
 
     background-image: url(../images/footer/footer-1-lg.png);
     @media screen and(min-device-pixel-ratio: 2),
@@ -40,6 +42,7 @@
     margin-bottom: 60px;
     @media screen and(min-width:1280px) {
       margin-bottom: 63px;
+      // padding-bottom: 232px;
     }
   }
 }

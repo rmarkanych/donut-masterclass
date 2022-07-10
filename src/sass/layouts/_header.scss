@@ -1,34 +1,130 @@
 .header {
-  background-repeat: no-repeat;
-  background-position: left -1px top 0px, top 2px left 36px, top 38px left 18px,
-    top 54px left 73px, top -28px left 17px, top 43px left 3px,
-    top -51px left 51px, top 63px left -8px;
-  background-image: url(../images/header/header-donut-8-sm.png),
-    url(../images/header/header-donut-7-sm.png),
-    url(../images/header/header-donut-6-sm.png),
-    url(../images/header/header-donut-5-sm.png),
-    url(../images/header/header-donut-4-sm.png),
-    url(../images/header/header-donut-3-sm.png),
-    url(../images/header/header-donut-2-sm.png),
-    url(../images/header/header-donut-1-sm.png);
+  @media screen and(max-width:767px) {
+    background-repeat: no-repeat;
+    background-position: top -6.83px left -12px, top 1.94px left 36.87px,
+      top 37.89px left 17.11px, top 53.94px left 73.52px,
+      top -28.45px left 17.13px, top 43.6px left 3.66px, top -51px left 51.9px,
+      top 63.96px left -8.87px;
 
-  @media screen and(min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/header/header-donut-8-sm@2x.png),
-      url(../images/header/header-donut-7-sm@2x.png),
-      url(../images/header/header-donut-6-sm@2x.png),
-      url(../images/header/header-donut-5-sm@2x.png),
-      url(../images/header/header-donut-4-sm@2x.png),
-      url(../images/header/header-donut-3-sm@2x.png),
-      url(../images/header/header-donut-2-sm@2x.png),
-      url(../images/header/header-donut-1-sm@2x.png);
+    background-size: 63.9px 70.79px, 35.08px 39.16px, 68.3px 75.63px,
+      44.17px 48.87px, 34.77px 38.53px, 29.45px 32.89px, 59.52px 66.1px,
+      28.82px 31.95px;
+
+    background-image: url(../images/header/header-donut-8-sm.png),
+      url(../images/header/header-donut-7-sm.png),
+      url(../images/header/header-donut-6-sm.png),
+      url(../images/header/header-donut-5-sm.png),
+      url(../images/header/header-donut-4-sm.png),
+      url(../images/header/header-donut-3-sm.png),
+      url(../images/header/header-donut-2-sm.png),
+      url(../images/header/header-donut-1-sm.png);
+
+    @media screen and(min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/header/header-donut-8-sm@2x.png),
+        url(../images/header/header-donut-7-sm@2x.png),
+        url(../images/header/header-donut-6-sm@2x.png),
+        url(../images/header/header-donut-5-sm@2x.png),
+        url(../images/header/header-donut-4-sm@2x.png),
+        url(../images/header/header-donut-3-sm@2x.png),
+        url(../images/header/header-donut-2-sm@2x.png),
+        url(../images/header/header-donut-1-sm@2x.png);
+    }
   }
-  @media screen and(min-width:768px) {
+  // @media screen and(min-width:768px) {
+  //   background-position: left 353px top 71px, top 92px left 471px,
+  //     top 178px left 423px, top 217px left 559px, top 19px left 423px,
+  //     top 192px left 391px, top 0px left 507px, top 241px left 361px;
+  //   padding-bottom: 50px;
+
+  //   background-position: top 71px right 260.44px, top 92.42px right 212.19px,
+  //     top 178.96px right 179.76px, top 217.58px right 102.11px,
+  //     top 19.29px right 260.44px, top 192.7px right 305.68px,
+  //     top -35px right 117.19px, top 241.71px right 337.35px;
+
+  //   background-size: 153.81px 170.4px, 84.45px 94.25px, 164.4px 184.04px,
+  //     106.31px 117.62px, 83.69px 92.74px, 70.87px 79.17px, 143.26px 159.09px,
+  //     69.37px 76.91px;
+
+  //   background-image: url(../images/header/header-donut-8-md.png),
+  //     url(../images/header/header-donut-6-md.png),
+  //     url(../images/header/header-donut-7-md.png),
+  //     url(../images/header/header-donut-5-md.png),
+  //     url(../images/header/header-donut-4-md.png),
+  //     url(../images/header/header-donut-3-md.png),
+  //     url(../images/header/header-donut-2-md.png),
+  //     url(../images/header/header-donut-1-md.png);
+
+  //   @media screen and(min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/header/header-donut-8-md@2x.png),
+  //       url(../images/header/header-donut-6-md@2x.png),
+  //       url(../images/header/header-donut-7-md@2x.png),
+  //       url(../images/header/header-donut-5-md@2x.png),
+  //       url(../images/header/header-donut-4-md@2x.png),
+  //       url(../images/header/header-donut-3-md@2x.png),
+  //       url(../images/header/header-donut-2-md@2x.png),
+  //       url(../images/header/header-donut-1-md@2x.png);
+  //   }
+  // }
+  @media screen and(min-width:1280px) {
+    padding-bottom: 204px;
+    background-repeat: no-repeat;
+    background-position: top 53.09px right 249.86px, top 97.39px right 148.6px,
+      top 279px right 80.59px, top 360.04px right -75px,
+      top -56.08px right 249.86px, top 307.83px right 344.79px,
+      top -170px right -45px, top 410.67px right 411.25px;
+
+    background-size: 322.77px 357.58px, 177.21px 197.78px, 345px 382px,
+      223.09px 246.83px, 175.63px 194.61px, 148.73px 166.13px, 300.62px 333.85px,
+      145.56px 161.39px;
+
+    background-image: url(../images/header/header-donut-8-lg.png),
+      url(../images/header/header-donut-7-lg.png),
+      url(../images/header/header-donut-6-lg.png),
+      url(../images/header/header-donut-5-lg.png),
+      url(../images/header/header-donut-4-lg.png),
+      url(../images/header/header-donut-3-lg.png),
+      url(../images/header/header-donut-2-lg.png),
+      url(../images/header/header-donut-1-lg.png);
+
+    @media screen and(min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/header/header-donut-8-lg@2x.png),
+        url(../images/header/header-donut-7-lg@2x.png),
+        url(../images/header/header-donut-6-lg@2x.png),
+        url(../images/header/header-donut-5-lg@2x.png),
+        url(../images/header/header-donut-4-lg@2x.png),
+        url(../images/header/header-donut-3-lg@2x.png),
+        url(../images/header/header-donut-2-lg@2x.png),
+        url(../images/header/header-donut-1-lg@2x.png);
+    }
+  }
+}
+.header__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 16px;
+
+  @media screen and(min-width:768px) and (max-width: 1279px) {
+    align-items: flex-start;
+    padding-top: 24px;
     padding-bottom: 50px;
-    background-position: left 353px top 71px, top 92px left 471px,
-      top 178px left 423px, top 217px left 559px, top 19px left 423px,
-      top 192px left 391px, top 0px left 507px, top 241px left 361px;
+    background-repeat: no-repeat;
+    background-position: top 71px right 260.44px, top 92.42px right 212.19px,
+      top 178.96px right 179.76px, top 217.58px right 102.11px,
+      top 19.29px right 260.44px, top 192.7px right 305.68px,
+      top -35px right 117.19px, top 241.71px right 337.35px;
+
+    background-size: 153.81px 170.4px, 84.45px 94.25px, 164.4px 184.04px,
+      106.31px 117.62px, 83.69px 92.74px, 70.87px 79.17px, 143.26px 159.09px,
+      69.37px 76.91px;
+
     background-image: url(../images/header/header-donut-8-md.png),
       url(../images/header/header-donut-6-md.png),
       url(../images/header/header-donut-7-md.png),
@@ -42,53 +138,19 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/header/header-donut-8-md@2x.png),
-        url(../images/header/header-donut-7-md@2x.png),
         url(../images/header/header-donut-6-md@2x.png),
+        url(../images/header/header-donut-7-md@2x.png),
         url(../images/header/header-donut-5-md@2x.png),
         url(../images/header/header-donut-4-md@2x.png),
         url(../images/header/header-donut-3-md@2x.png),
         url(../images/header/header-donut-2-md@2x.png),
         url(../images/header/header-donut-1-md@2x.png);
     }
-    @media screen and(min-width:1280px) {
-      padding-bottom: 204px;
-      background-position: left 701px top 53px, top 97px left 948px,
-        top 279px left 849px, top 360px left 1133px, top -56px left 849px,
-        top 307px left 781px, top -170px left 1024px, top 410px left 717px;
-      background-image: url(../images/header/header-donut-8-lg.png),
-        url(../images/header/header-donut-7-lg.png),
-        url(../images/header/header-donut-6-lg.png),
-        url(../images/header/header-donut-5-lg.png),
-        url(../images/header/header-donut-4-lg.png),
-        url(../images/header/header-donut-3-lg.png),
-        url(../images/header/header-donut-2-lg.png),
-        url(../images/header/header-donut-1-lg.png);
-
-      @media screen and(min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/header/header-donut-8-lg@2x.png),
-          url(../images/header/header-donut-7-lg@2x.png),
-          url(../images/header/header-donut-6-lg@2x.png),
-          url(../images/header/header-donut-5-lg@2x.png),
-          url(../images/header/header-donut-4-lg@2x.png),
-          url(../images/header/header-donut-3-lg@2x.png),
-          url(../images/header/header-donut-2-lg@2x.png),
-          url(../images/header/header-donut-1-lg@2x.png);
-      }
-    }
   }
-}
-.header__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 16px;
-
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:1280px) {
     align-items: flex-start;
     padding-top: 24px;
+    padding-bottom: 50px;
   }
 }
 
