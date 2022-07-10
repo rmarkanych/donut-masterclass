@@ -32,10 +32,21 @@
       </nav>
     </div>
 
-    <button class="header-burger" type="button">
+    <button
+      class="header-burger"
+      type="button"
+      data-menu-button
+      aria-expanded="false"
+    >
       <svg class="header-burger__icon" height="16" width="30">
-        <use href="./images/sprite.svg#menu-burger"></use>
-        <use href="./images/sprite.svg#close"></use>
+        <use
+          class="header-burger__icon-open"
+          href="./images/sprite.svg#menu-burger"
+        ></use>
+        <use
+          class="header-burger__icon-close"
+          href="./images/sprite.svg#close"
+        ></use>
       </svg>
     </button>
     <div class="header-txt">
@@ -58,7 +69,7 @@
           </svg>
         </a>
       </li>
-      <li class="socials__link">
+      <li class="socials__item">
         <a class="socials__link" href="#">
           <svg class="socials__icon" height="16" width="16">
             <use href="./images/sprite.svg#facebook"></use>
