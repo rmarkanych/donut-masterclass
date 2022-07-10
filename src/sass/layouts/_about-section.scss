@@ -14,15 +14,31 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
             background-image: url('../images/about-us/about-us-spoon-lg@2x.png');
-            }
+            background-size: 145px;        }
         }
 }
 
 .about__picture {
-    margin-bottom: 16px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1279px) {
         width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 502px;
+    }
+}
+
+.about__article {
+    @media screen and (min-width: 768px) {
+        width: 336px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 392px;
     }
 }
 
@@ -45,16 +61,6 @@
         }
     }
 
-.about__article {
-    @media screen and (min-width: 768px) {
-        width: 336px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 392px;
-    }
-}
-
 .about__text {
     font-size: 16px;
     line-height: 1.25;
@@ -64,4 +70,3 @@
         line-height: 1.22;
     }
 }
-
