@@ -15,7 +15,24 @@
    line-height: 65px;
    color: #2E2520;
 }
+
+   
+
+
+
+
 .registration__container{/*Главный контейнер секции*/
+   display: flex;
+   flex-direction: column;
+   width: 436px;
+   height: 280px;
+   @media screen and (min-width:768px) {
+      width: 704px;
+      height: 234px; 
+   }
+   @media screen and (min-width:1280px) {
+      
+
    text-align: center;
    display: flex;
    align-items: center;
@@ -28,6 +45,7 @@
    4px 4px 4px rgba(171, 129, 108, 0.15);
    border-radius: 150px;
 }
+}
 .date__element{/*Первый элемент*/
    width: 127px;
    height: 48px;
@@ -39,27 +57,34 @@
    text-align: right;
    color: #2E2520;
    justify-content: center;
+   display: flex;
+   align-content: flex-end;
 }
-.line__element{/*второй*/
+
+.element__container::before{
+   
+   content: "";
    width: 166px;
-   height: 0px;
-   left: 492px;
-   border: 1px solid rgba(171, 129, 108, 0.5);
+   height: 0;
+   border: 1px solid #ab816c80;
    transform: rotate(90deg);
-   flex-basis: auto;
-   // margin-left: -45px;
+   position: absolute;
+   margin-left: -112px;
+   
 }
-.element__container{/*третий*/
+.element__container{
    display: flex; 
    flex-direction: column;
    justify-content: space-around;
    flex-basis: auto;
-   margin-left: -60px;
+   margin-left: 68px;
+
+   
  }
  .registration__text{
    width: 238px;
    height: 44px;
-   /* padding-bottom: 10px; */
+
    font-family: 'Montserrat';
    font-style: normal;
    font-weight: 400;
@@ -112,7 +137,3 @@
    margin-top: 28px;
    margin-left: 28px;
 }
-// .button__element{
-//    padding-top: 51px;
-//    padding-left: 28px;
-// }
