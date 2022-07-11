@@ -52,6 +52,14 @@
 }
 .contact-details__item {
   display: flex;
+  @media screen and(min-width:768px) {
+    padding-right: 116px;
+  }
+  @media screen and(min-width:1280px) {
+    // padding-right: 373px;
+    // padding-left: 149px;
+    gap: 620px;
+  }
 }
 .contact-details__link {
   display: inline-flex;
