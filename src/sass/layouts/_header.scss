@@ -32,43 +32,7 @@
         url(../images/header/header-donut-1-sm@2x.png);
     }
   }
-  // @media screen and(min-width:768px) {
-  //   background-position: left 353px top 71px, top 92px left 471px,
-  //     top 178px left 423px, top 217px left 559px, top 19px left 423px,
-  //     top 192px left 391px, top 0px left 507px, top 241px left 361px;
-  //   padding-bottom: 50px;
 
-  //   background-position: top 71px right 260.44px, top 92.42px right 212.19px,
-  //     top 178.96px right 179.76px, top 217.58px right 102.11px,
-  //     top 19.29px right 260.44px, top 192.7px right 305.68px,
-  //     top -35px right 117.19px, top 241.71px right 337.35px;
-
-  //   background-size: 153.81px 170.4px, 84.45px 94.25px, 164.4px 184.04px,
-  //     106.31px 117.62px, 83.69px 92.74px, 70.87px 79.17px, 143.26px 159.09px,
-  //     69.37px 76.91px;
-
-  //   background-image: url(../images/header/header-donut-8-md.png),
-  //     url(../images/header/header-donut-6-md.png),
-  //     url(../images/header/header-donut-7-md.png),
-  //     url(../images/header/header-donut-5-md.png),
-  //     url(../images/header/header-donut-4-md.png),
-  //     url(../images/header/header-donut-3-md.png),
-  //     url(../images/header/header-donut-2-md.png),
-  //     url(../images/header/header-donut-1-md.png);
-
-  //   @media screen and(min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-image: url(../images/header/header-donut-8-md@2x.png),
-  //       url(../images/header/header-donut-6-md@2x.png),
-  //       url(../images/header/header-donut-7-md@2x.png),
-  //       url(../images/header/header-donut-5-md@2x.png),
-  //       url(../images/header/header-donut-4-md@2x.png),
-  //       url(../images/header/header-donut-3-md@2x.png),
-  //       url(../images/header/header-donut-2-md@2x.png),
-  //       url(../images/header/header-donut-1-md@2x.png);
-  //   }
-  // }
   @media screen and(min-width:1280px) {
     padding-bottom: 204px;
     background-repeat: no-repeat;
@@ -80,6 +44,7 @@
     background-size: 322.77px 357.58px, 177.21px 197.78px, 345px 382px,
       223.09px 246.83px, 175.63px 194.61px, 148.73px 166.13px, 300.62px 333.85px,
       145.56px 161.39px;
+    box-shadow: inset;
 
     background-image: url(../images/header/header-donut-8-lg.png),
       url(../images/header/header-donut-7-lg.png),
@@ -159,6 +124,7 @@
   top: 16;
   right: 20;
   margin-left: auto;
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -177,7 +143,6 @@
   }
   @media screen and(min-width:1280px) {
     margin-left: 55px;
-    padding-top: 23px;
   }
 }
 
@@ -192,13 +157,13 @@
 .header-nav__link {
   display: inline-flex;
   color: var(--primary-text-color);
+  padding: 20px 0 20px 0;
 
   transition: all 0.5s ease;
   &:hover,
   &:focus {
     color: #876655;
     transform: scale(1.2);
-    // text-shadow: 2px 2px 4px #000000;
   }
 }
 .header-txt {
@@ -266,6 +231,47 @@
     margin-top: 32px;
   }
 }
+
+.heartbeat {
+  -webkit-animation: heartbeat 1.5s ease-in-out 3 both;
+  animation: heartbeat 1.5s ease-in-out 3 both;
+}
+
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+    transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+    transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+}
+
 .logo__image {
   @media screen and(min-width:1280px) {
     width: 158px;

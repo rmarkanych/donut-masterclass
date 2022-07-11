@@ -3,21 +3,21 @@
 @import './util/vars';
 
 // База
-@import "./base/base";
-@import "./base/conteiner";
-@import "./base/reset";
+@import './base/base';
+@import './base/conteiner';
+@import './base/reset';
+@import './base/btn-top';
 
 // Страницы
-@import "./layouts/header";
-@import "./layouts/menu";
-@import "./layouts/about-section";
-@import "./layouts/program-section";
-@import "./layouts/speakers-sectione";
-@import "./layouts/price-section";
-@import "./layouts/reviews-sectione";
-@import "./layouts/registration-sectione";
-@import "./layouts/contacts-section";
-@import "./layouts/footer";
+@import './layouts/header';
+@import './layouts/menu';
+@import './layouts/about-section';
+@import './layouts/program-section';
+@import './layouts/speakers-sectione';
+@import './layouts/price-section';
+@import './layouts/reviews-sectione';
+@import './layouts/registration-sectione';
+@import './layouts/contacts-section';
+@import './layouts/footer';
 
 // Компоненты
-
