@@ -1,0 +1,2 @@
+var offset=100,scrollUp=document.querySelector(".btn-scroll"),getTop=function(){return window.pageYOffset||document.documentElement.scrollTop};window.addEventListener("scroll",(function(){getTop()>offset?scrollUp.classList.add("btn-scroll__active"):scrollUp.classList.remove("btn-scroll__active")})),scrollUp.addEventListener("click",(function(){window.scrollTo({top:0,behavior:"smooth"})}));
+//# sourceMappingURL=index.1fc5e696.js.map
