@@ -7,9 +7,9 @@ body {
   color: var(--primary-text-color);
 
   // mobile scren
-  background-position: bottom, top;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-position-y: bottom, top;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100% 38%, 100%;
 
   background-image: url(../images/rewievs/reviews-bg-1-sm.png),
                     url(../images/header/header-bg-1-sm.png);
@@ -24,6 +24,7 @@ body {
 
   // tablet scren
     @media screen and (min-width:768px) {
+      background-size: 100% 49.5%, 100%;
       background-image: url(../images/rewievs/reviews-bg-1-md.png)
                         url(../images/header/header-bg-1-md.png);
   
@@ -36,7 +37,8 @@ body {
     }
   
     // desktop scren
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
+      background-size: 100% 53%, 100% 21%;
       background-image:url(../images/rewievs/rewievs-bg-lg.png),
                        url(../images/header/header-bg-1-lg.png);
   
