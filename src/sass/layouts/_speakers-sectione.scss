@@ -1,8 +1,8 @@
-.speakers {
-  width: calc(100% - 40px);
+.speakers__container {
+  width: 100%;
   @media screen and (min-width: 768px) {
     background-color: var(--bg-secondary-color);
-    width: calc(100% - 64px);
+    width: 100%;
     border-radius: 40px;
 
     background-position: top;
@@ -56,7 +56,7 @@
     background-repeat: no-repeat;
     background-image: url(../images/speakers/bg-sm.png);
     
-  background-size: 100%;
+    background-size: 100% 67px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 179px;
