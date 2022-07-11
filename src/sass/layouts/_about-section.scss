@@ -7,6 +7,11 @@
     @media screen and (max-width: 767px) {
         flex-direction: column;
     }
+
+    @media screen and (min-width: 1280px) {
+    padding-left: 122px;
+    padding-right: 125px;
+    }
 }
 
 .about__picture {
@@ -75,5 +80,35 @@
     @media screen and (min-width: 1280px) {
         font-size: 18px;
         line-height: 1.22;
+    }
+}
+
+.about__text {
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 20px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.about__btn,
+.program__btn {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+
+    font-family: 'Caveat Brush', cursive;
+    font-size: 18px;
+    line-height: 1.28;
+    color: var(--style-color);
+    
+    @media screen and (min-width: 1280px) {
+        display: none;
     }
 }
