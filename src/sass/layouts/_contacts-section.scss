@@ -1,5 +1,6 @@
 .contact{
    text-align: center;
+   margin-top: 32px;
 }
 
 
@@ -31,31 +32,38 @@
    font-family: 'Montserrat';
    font-style: normal;
    font-weight: 400;
-   font-size: 18px;
+   font-size: 16px;
    line-height: 22px;
    text-align: center;
    color: #2E2520;
+   @media screen and (min-width:1280px) {
+
+
+
+   }
 }
 
 
 
 
 .contact__input{
-   width: 280px;
-   height: 22px;
-   @media screen and (min-width:768px) {
-   width: 336px;
-   height: 22px;
-   }
-   @media screen and (min-width:1280px) {
+   text-align: center;
    background: rgba(255, 255, 249, 1);
    border: 1px solid rgba(171, 129, 108, 1),; 
-   width: 394px;
+   width: 280px;
    height: 22px;
    margin-top: 16px;
    border-right: none;
    border-left: none;
    border-top: none;
+   @media screen and (min-width:768px) {
+   width: 336px;
+   height: 22px;
+   }
+   @media screen and (min-width:1280px) {
+   width: 394px;
+   height: 22px;
+
 }
 }
 .contact__input::-webkit-input-placeholder{
@@ -65,25 +73,37 @@
    font-size: 16px;
    line-height: 20px;
    color: rgba(171, 129, 108, 0.5);
+   text-align: start;
 }
 .contact__button{
    border: none;
    cursor: pointer;
-   width: 182px;
-   height: 45px;
+   width: 145px;
+   height: 40px;
    background: #AB816C;
    border-radius: 25px;
    font-family: 'Caveat Brush';
    font-style: normal;
    font-weight: 400;
-   font-size: 24px;
+   font-size: 18px;
    line-height: 30px;
    text-align: center;
    color: rgba(255, 255, 255, 1);
    margin-top: 32px;
+   align-items: center;
+   @media screen and (min-width:768px) {
+      width: 145px;
+      height: 40px;
+   }
+   @media screen and (min-width:1280px) {
+   width: 182px;
+   height: 45px;
+   font-size: 24px;
+   }
 }
 .contact__form{
    display: flex;
    flex-direction: column;
    padding-top: 16px;
+   align-items: center
 }
