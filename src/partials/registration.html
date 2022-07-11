@@ -1,20 +1,33 @@
-<section class="registration">
+<section id="registr" class="registration">
    <h2 class="registration__title">Registration</h2>
    <div class="registration__container"><!--Главный контейнер-->
       <div class="date__element">May 23, 11:00 New York</div>
-      <div class="line__element"></div>
+      <!-- <div class="line__element"></div> -->
       <div class="element__container">
          <p class="registration__text">Apply your personal info
          for registration </p>
          <form class="registration__form">
-            <input class="input registration__input" type="text" placeholder="Your name">
-            <input class="input registration__input" type="text" placeholder="Phone number">
-            <input class="input registration__input" type="text" placeholder="Email">
+            <input type="text" 
+            class="input registration__input" 
+            name="user-name" placeholder="Your name"
+            required>
+            <input type="tel" 
+            class="input registration__input" 
+            name="user-tel" 
+            placeholder="Phone number" 
+            required
+            minlength="10">
+            <input type="email" 
+            class="input registration__input" 
+            name="user-mail" 
+            placeholder="Email" 
+            required 
+            title="+380 (96) 111-11-11">
+            <button type="submit" class="button registration__button">Register</button>
          </form>
       </div>
-      <div class="button__element">
-         <button type="submit" class="button registration__button">Register</button>
-      </div>
+     
+        
    </div>
    </section>
    

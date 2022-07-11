@@ -8,11 +8,12 @@ body {
 
   // mobile scren
   background-position: bottom, top;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, no-repeat;
   background-size: 100%;
-
-  background-image: url(../images/rewievs/reviews-bg-1-sm.png),
-    url(../images/header/header-bg-1-sm.png);
+  background-position: top center, bottom 175px right 0px;
+  background-size: 100% 6%, 100% 18%;
+  background-image: url(../images/header/header-bg-1-sm.png),
+    url(../images/rewievs/reviews-bg-1-sm.png);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -23,27 +24,33 @@ body {
 
   // tablet scren
   @media screen and (min-width: 768px) {
-    background-image: url(../images/rewievs/reviews-bg-1-md.png)
-      url(../images/header/header-bg-1-md.png);
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 11.5%, 100% 33%;
+    background-image: url(../images/header/header-bg-1-md.png),
+      url(../images/rewievs/reviews-bg-1-md.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/rewievs/reviews-bg-1-md@2x.png),
-        url(../images/header/header-bg-1-md@2x.png);
+      background-image: url(../images/header/header-bg-1-md@2x.png),
+        url(../images/rewievs/reviews-bg-1-md@2x.png);
     }
   }
 
   // desktop scren
-  @media screen and (min-width: 1200px) {
-    background-image: url(../images/rewievs/rewievs-bg-lg.png),
-      url(../images/header/header-bg-1-lg.png);
+  @media screen and (min-width: 1280px) {
+    background-position: top center, bottom center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 22%, 100% 31%;
+    background-image: url(../images/header/header-bg-1-lg.png),
+      url(../images/rewievs/rewievs-bg-lg.png);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/rewievs/rewievs-bg-lg@2x.png),
-        url(../images/header/header-bg-1-lg@2x.png);
+      background-image: url(../images/header/header-bg-1-lg@2x.png),
+        url(../images/rewievs/rewievs-bg-lg@2x.png);
     }
   }
 

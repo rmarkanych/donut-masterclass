@@ -40,3 +40,11 @@ a {
 .pointer {
   cursor: pointer;
 }
+
+.is-hidden {
+  display: none;
+
+    @media screen and (min-width: 1280px) {
+      display: block;
+    }
+}

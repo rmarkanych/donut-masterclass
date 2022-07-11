@@ -1,16 +1,19 @@
-.speakers {
-  width: calc(100% - 40px);
+.speakers__container {
+  width: 100%;
   @media screen and (min-width: 768px) {
     background-color: var(--bg-secondary-color);
-    width: calc(100% - 64px);
+    width: 100%;
     border-radius: 40px;
-    padding-bottom: 29px;
 
     background-position: top;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-image: url(../images/speakers/Vector@2x.png);
+    background-image: url(../images/speakers/bg-md.png);
   }
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/speakers/bg-lg.png);
+  }
+
 }
 
 .speakers__title {
@@ -42,16 +45,18 @@
     padding-top: 122px;
     flex-wrap: nowrap;
     gap: 32px;
+    
+    padding-bottom: 40px;
   }
   @media screen and (max-width: 768px) {
     background-color: var(--bg-secondary-color);
     border-radius: 20px;
-    padding-bottom: 40px;
 
     background-position: top;
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: url(../images/speakers/Vector.png);
+    background-image: url(../images/speakers/bg-sm.png);
+    
+    background-size: 100% 67px;
   }
   @media screen and (min-width: 1280px) {
     padding-top: 179px;

@@ -1,11 +1,23 @@
+
 <section class="contact">
    <div class="container contact_container">
       <h2 class="contact__title">Contact</h2>
          <p class="contact__text">We will answer any your question!</p>
+         
          <form class="contact__form">
-            <input class="contact__input" type="text" placeholder="Email">
-            <input class="contact__input" type="text" placeholder="Type your question" >
+            <input type="email" 
+            class="contact__input" 
+            name="user-mail" 
+            placeholder="Email" 
+            required>
+            <input type="text" 
+            class="contact__input" 
+            name="user-question" 
+            placeholder="Type your question" 
+            required>
+            <button class="button contact__button" type="submit">Send</button>
          </form>
+
    </div>
-      <button class="button contact__button" type="button">Send</button>
-   </section>
+      
+</section>
