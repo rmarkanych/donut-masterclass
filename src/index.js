@@ -4,3 +4,4 @@ import './js/arrow-to-top';
 
 import "./js/read-more";
 import "./js/carusel";
+import "./js/timer";
