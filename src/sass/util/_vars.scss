@@ -4,5 +4,10 @@
   --style-color: #ab816c;
   --input-txt-color: rgba(171, 129, 108, 0.5);
   --bg-secondary-color: #fef3e4;
+  --input-border: 1px solid rgba(171, 129, 108, 1);
   --animation: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  --registration-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+  --hover-btn-color: #876655;
+  --primary-animation: 0.5s ease;
 }
