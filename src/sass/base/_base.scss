@@ -9,24 +9,23 @@ body {
   // mobile scren
   background-position: bottom, top;
   background-repeat: no-repeat, no-repeat;
-  background-size: 100%;
   background-position: top center, bottom 175px right 0px;
-  background-size: 100% 6%, 100% 18%;
+  background-size: 100% 8%, 100% 26%;
   background-image: url(../images/header/header-bg-1-sm.png),
     url(../images/rewievs/reviews-bg-1-sm.png);
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/rewievs/reviews-bg-1-sm@2x.png),
-      url(../images/header/header-bg-1-sm@2x.png);
+    background-image: url(../images/header/header-bg-1-sm@2x.png) ,
+    url(../images/rewievs/reviews-bg-1-sm@2x.png);
   }
 
   // tablet scren
   @media screen and (min-width: 768px) {
     background-position: top center, bottom center;
     background-repeat: no-repeat, no-repeat;
-    background-size: 100% 11.5%, 100% 33%;
+    background-size: 100% 14%, 100% 39%;
     background-image: url(../images/header/header-bg-1-md.png),
       url(../images/rewievs/reviews-bg-1-md.png);
 
@@ -42,7 +41,7 @@ body {
   @media screen and (min-width: 1280px) {
     background-position: top center, bottom center;
     background-repeat: no-repeat, no-repeat;
-    background-size: 100% 22%, 100% 31%;
+    background-size: 100% 19%, 100% 40%;
     background-image: url(../images/header/header-bg-1-lg.png),
       url(../images/rewievs/rewievs-bg-lg.png);
 
