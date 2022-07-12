@@ -26,7 +26,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        width: 450px;
+        width: 392px;
     }
 }
 
@@ -78,7 +78,7 @@
     }
 
     @media screen and (min-width: 1280px) {
-        margin-bottom: 16px;
+        margin-bottom: 22px;
     }
 }
 
@@ -102,8 +102,10 @@
     }
     
     @media screen and (min-width: 1280px) {
-    row-gap: 0px;
-    column-gap: 40px;
+    row-gap: 56px;
+    column-gap: 132px;
+    width: 500px;
+    margin-left: 142px;
     }
 }
 
@@ -123,6 +125,7 @@
     @media screen and (min-width: 1280px) {
     gap: 12px;
     flex-basis: calc((100% - 140px) / 2);
+    max-width: 180px;
     }
 }
 

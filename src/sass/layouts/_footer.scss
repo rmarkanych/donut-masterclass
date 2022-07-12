@@ -32,9 +32,10 @@
   }
 
   @media screen and(min-width:1280px) {
-    padding-bottom: 194px;
+    padding-bottom: 232px;
   }
 }
+
 .footer__socials {
   justify-content: center;
   margin-bottom: 32px;
@@ -43,7 +44,7 @@
     margin-bottom: 60px;
 
     @media screen and(min-width:1280px) {
-      margin-bottom: 63px;
+      margin-bottom: 73px;
     }
   }
 }
@@ -81,7 +82,7 @@
     display: block;
     position: absolute;
     right: 0;
-    bottom: 43px;
+    bottom: 75px;
     z-index: -1;
   }
 }
