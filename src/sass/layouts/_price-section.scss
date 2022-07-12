@@ -86,6 +86,8 @@
 
 .price__item:first-child {
   @media screen and (min-width: 1280px) {
+    -webkit-animation: price-first 2s linear infinite alternate ;
+	        animation: price-first 2s linear infinite alternate ;
     background-repeat: no-repeat;
     background-size: 66px 73px, 66px 73px, 66px 73px, 335px;
     background-position: top 403px left 0px, top 401px left 224px,
@@ -105,8 +107,27 @@
   }
 }
 
+@-webkit-keyframes price-first {
+  0% {
+    background-size: 66px 73px, 66px 73px, 66px 73px, 335px 185px;
+  }
+  100% {
+    background-size: 66px 73px, 66px 73px, 66px 73px, 335px 130px;
+  }
+}
+@keyframes price-first {
+  0% {
+    background-size: 66px 73px, 66px 73px, 66px 73px, 335px 130px;
+  }
+  100% {
+    background-size: 66px 73px, 66px 73px, 66px 73px, 335px 185px;
+  }
+}
+
 .price__item:nth-child(2) {
   @media screen and (min-width: 1280px) {
+    -webkit-animation: price-second 2s linear infinite alternate ;
+	        animation: price-second  2s linear infinite alternate ;
     background-repeat: no-repeat;
     background-size: 66px 73px, 66px 73px, 335px;
     background-position: top 366 left 327px, top 448px left 0px,
@@ -124,8 +145,27 @@
   }
 }
 
+@-webkit-keyframes price-second {
+  0% {
+    background-size: 66px 73px, 66px 73px, 335px 185px;
+  }
+  100% {
+    background-size: 66px 73px, 66px 73px, 335px 130px;
+  }
+}
+@keyframes price-second {
+  0% {
+    background-size: 66px 73px, 66px 73px, 335px 130px;
+  }
+  100% {
+    background-size: 66px 73px, 66px 73px, 335px 185px;
+  }
+}
+
 .price__item:last-child {
   @media screen and (min-width: 1280px) {
+    -webkit-animation: price-third 2s linear infinite alternate ;
+	        animation: price-third  2s linear infinite alternate ;
     background-repeat: no-repeat;
     background-size: 66px 73px, 66px 73px, 335px;
     background-position: top 464 left 329px, top 537px left 44px,
@@ -140,6 +180,23 @@
         url(../images/price/price-donut-3-lg.png),
         url(../images/price/price-bg-1-lg@2x.png);
     }
+  }
+}
+
+@-webkit-keyframes price-third {
+  0% {
+    background-size: 66px 73px, 66px 73px, 335px 185px;
+  }
+  100% {
+    background-size: 66px 73px, 66px 73px, 335px 130px;
+  }
+}
+@keyframes price-third {
+  0% {
+    background-size: 66px 73px, 66px 73px, 335px 130px;
+  }
+  100% {
+    background-size: 66px 73px, 66px 73px, 335px 185px;
   }
 }
 
@@ -189,7 +246,8 @@
 }
 
 .price__btn {
-  margin: auto;
+  -webkit-animation: heartbeat 6s 2s infinite ;
+  animation: heartbeat 6s 2s infinite ;  margin: auto;
   margin-bottom: 20px;
   @media screen and (max-width: 768px) {
     margin-top: 32px;
@@ -198,5 +256,74 @@
     width: 145px;
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
   }
 }
