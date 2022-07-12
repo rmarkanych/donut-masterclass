@@ -7,10 +7,11 @@
   width: 100%;
   text-align: center;
   padding-bottom: 32px;
+
   // tablet screen
   @media screen and (min-width: 768px) {
     padding-bottom: 80px;
-    background-position: 90%;
+    background-position: 180% -10%;
     background-repeat: no-repeat;
     background-image: url(../images/registration/registration-2-lg.png);
 
@@ -20,15 +21,15 @@
       background-image: url(../images/registration/registration-2-lg@2x.png);
     }
   }
+  
   @media screen and (min-width: 1280px) {
     padding-bottom: 180px;
+    background-position: 83% -50%;
   }
 }
 
 /*Заголовок*/
 .registration__title {
-  position: absolute;
-  top: 32px;
   text-align: center;
   font-family: 'Caveat Brush';
   font-style: normal;
@@ -52,21 +53,19 @@
 
 .registration__img {
   display: none;
+
   @media screen and (min-width: 768px) {
+    display: block;
     position: absolute;
-    visibility: visible;
     left: 50%;
-    transform: translateX(-150%);
+    transform: translateX(-170%);
     top: -30px;
-    display: initial;
   }
 
   @media screen and (min-width: 1280px) {
-    position: absolute;
     left: 50%;
-    transform: translateX(-200%);
+    transform: translateX(-220%);
     top: 0;
-    display: initial;
   }
 }
 
