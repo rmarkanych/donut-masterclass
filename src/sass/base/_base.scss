@@ -17,8 +17,8 @@ body {
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../images/header/header-bg-1-sm@2x.png) ,
-    url(../images/rewievs/reviews-bg-1-sm@2x.png);
+    background-image: url(../images/header/header-bg-1-sm@2x.png),
+      url(../images/rewievs/reviews-bg-1-sm@2x.png);
   }
 
   // tablet scren
@@ -75,5 +75,5 @@ img {
 }
 
 input:not(:placeholder-shown):invalid {
-border-color: red;
+  border-color: red;
 }
