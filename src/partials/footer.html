@@ -57,10 +57,39 @@
             ./images/footer/footer-1-lg.png    1x,
             ./images/footer/footer-1-lg@2x.png 2x
           "
-          type="img/png"
+          type="image/jpg"
         />
-        <img src="./images/footer/footer-1-lg.png" alt="flour and a spoon" />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/footer/footer-1-md.png    1x,
+            ./images/footer/footer-1-md@2x.png 2x
+          "
+          type="image/jpg"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/footer/footer-1-sm.png    1x,
+            ./images/footer/footer-1-sm@2x.png 2x
+          "
+          type="image/jpg"
+        />
+        <img src="./images/footer/footer-1-sm.png" alt="flour and a spoon" />
       </picture>
     </div>
+    <!-- <picture class="footer-img">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/footer/footer-1-lg.png    1x,
+          ./images/footer/footer-1-lg@2x.png 2x
+        "
+        type="img/png"
+      />
+      <img src="./images/footer/footer-1-lg.png" alt="flour and a spoon" />
+    </picture> -->
   </div>
 </footer>
