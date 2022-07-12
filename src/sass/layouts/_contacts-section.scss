@@ -1,6 +1,5 @@
 .contact{
    text-align: center;
-   margin-top: 32px;
 }
 
 
@@ -26,7 +25,13 @@
    font-size: 36px;
    line-height: 1.25;
    color: #2E2520;
+   @media screen and (min-width:1280px) {
+      margin-bottom: 20px;
+   }
 }
+
+
+
 .contact__text{
    white-space: nowrap;
    font-family: 'Montserrat';
@@ -104,6 +109,5 @@
 .contact__form{
    display: flex;
    flex-direction: column;
-   padding-top: 16px;
    align-items: center
 }
