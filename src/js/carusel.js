@@ -1,5 +1,5 @@
 //  import $ from 'jquery';
-$(".slider-conteiner").slick({
+$(".container__slider").slick({
  
   // normal options...
     infinite: true,
