@@ -1,276 +1,265 @@
-.registration{
-   position: relative;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-   align-items: center;
-   width: 100%;
-   text-align: center;
-   padding-bottom: 180px;
-   // tablet screen
-   @media screen and (min-width: 768px) {
-         background-position:  90%;
-         background-repeat: no-repeat;
-         background-image:
-            url(../images/registration/registration-2-lg.png);
-   
-         @media (min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi),
-         (min-resolution: 2dppx) {
-            background-image:
-               url(../images/registration/registration-2-lg@2x.png);
-         }
-      }
+.registration {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 32px;
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    padding-bottom: 80px;
+    background-position: 90%;
+    background-repeat: no-repeat;
+    background-image: url(../images/registration/registration-2-lg.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/registration/registration-2-lg@2x.png);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 180px;
+  }
 }
 
-
 /*Заголовок*/
-.registration__title{
-   position: absolute;
-   top: 32px;
-   text-align: center;
-   font-family: 'Caveat Brush';
-   font-style: normal;
-   font-weight: 400;
-   font-size: px;
-   line-height: 1.8;
-   color: #2E2520;
-   margin-bottom: 16px;
+.registration__title {
+  position: absolute;
+  top: 32px;
+  text-align: center;
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: px;
+  line-height: 1.8;
+  color: #2e2520;
+  margin-bottom: 16px;
 
-   @media screen and (min-width:768px) {
-      position: static;
-   }
+  @media screen and (min-width: 768px) {
+    position: static;
+  }
 
-   @media screen and (min-width:1280px) {
-         font-weight: 400;
-         font-size: 36px;
-         line-height: 1.8;
-         margin-bottom: 16px;
-      }
+  @media screen and (min-width: 1280px) {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
 }
 
 .registration__img {
-   display: none;
-   @media screen and (min-width:768px) {
-   position: absolute;
-   visibility: visible;
-   left: 50%;
-   transform: translateX(-150%);
-   top: -30px;
-   display: initial;
-      }
+  display: none;
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    visibility: visible;
+    left: 50%;
+    transform: translateX(-150%);
+    top: -30px;
+    display: initial;
+  }
 
-   @media screen and (min-width:1280px) {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-200%);
-      top: 0;
-      display: initial;
-   }
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-200%);
+    top: 0;
+    display: initial;
+  }
 }
 
 /*Главный контейнер секции*/
-.registration__container{
-   position: relative;
-   display: block;
-   padding-top: 82px;
-   width: 280px;
-   height: 436px;
-   background: #FFFFF9;
-   box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 4px 4px 4px rgba(171, 129, 108, 0.15);
-   border-radius: 150px 150px 0 0;
-   
-   
+.registration__container {
+  position: relative;
+  display: block;
+  padding-top: 82px;
+  width: 280px;
+  height: 436px;
+  background: #fffff9;
+  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+    4px 4px 4px rgba(171, 129, 108, 0.15);
+  border-radius: 150px 150px 0 0;
 
-   @media screen and (min-width:768px) {
-      position: relative;
-      padding-left: 62px;
-      width: 704px;
-      height: 234px; 
-      padding-top: 0;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      flex-shrink: 3;
-      box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
+  @media screen and (min-width: 768px) {
+    position: relative;
+    padding-left: 62px;
+    width: 704px;
+    height: 234px;
+    padding-top: 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-shrink: 3;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
       4px 4px 4px rgba(171, 129, 108, 0.15);
-      border-radius: 150px;
-      transform: none;
-   }
+    border-radius: 150px;
+    transform: none;
+  }
 
-   @media screen and (min-width:1280px) {
-      padding-left: 104px;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      flex-shrink: 3;
-      width: 822px;
-      height: 246px;
-      box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15), 
+  @media screen and (min-width: 1280px) {
+    padding-left: 104px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-shrink: 3;
+    width: 822px;
+    height: 246px;
+    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
       4px 4px 4px rgba(171, 129, 108, 0.15);
-      border-radius: 150px;
-      transform: none;
-}
+    border-radius: 150px;
+    transform: none;
+  }
 }
 
 /*Первый элемент*/
-.date__element{
-   width: 114px;
-   height: 44px;
-   font-family: 'Montserrat';
-   font-style: normal;
-   font-weight: 500;
-   font-size: 18px;
-   line-height: 1.33;
-   margin: 0 auto;
-   color: #2E2520;
-   justify-content: center;
-   display: flex;
-   text-align: center;
-   
-   @media screen and (min-width:768px) {
-         width: 90px;
-         height: 66px;
-         margin: 0;
-         
-      }
-   @media screen and (min-width:768px) {
-         align-content: flex-end;
-         font-size: 20px;
-         width: 127px;
-         height: 48px;
-      
-      }
+.date__element {
+  width: 114px;
+  height: 44px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.33;
+  margin: 0 auto;
+  color: #2e2520;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 90px;
+    height: 66px;
+    margin: 0;
+  }
+  @media screen and (min-width: 768px) {
+    align-content: flex-end;
+    font-size: 20px;
+    width: 127px;
+    height: 48px;
+  }
 }
 
-.element__container::before{
-   
-   content: "";
-   width: 264px;
-   height: 0;
-   border: 1px solid #ab816c80;
-   position: absolute;
-   top: 158px;
-   
-   @media screen and (min-width:768px) {
-         top: 120px;
-         width: 166px;
-         margin-left: -112px;
-         transform: rotate(90deg);
-      }
-   
+.element__container::before {
+  content: '';
+  width: 264px;
+  height: 0;
+  border: 1px solid #ab816c80;
+  position: absolute;
+  top: 158px;
+
+  @media screen and (min-width: 768px) {
+    top: 120px;
+    width: 166px;
+    margin-left: -112px;
+    transform: rotate(90deg);
+  }
 }
-.element__container{
-   display: flex; 
-   flex-direction: column;
-   justify-content: space-around;
-   flex-basis: auto;
-      @media screen and (min-width:768px) {
-         margin-left: 56px;
-      }
-      @media screen and (min-width:768px) {
-         margin-left: 64px;
-      }
-
-   
- }
- .registration__text{
-   width: 238px;
-   height: 44px;
-   font-family: 'Montserrat';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 1.22;
-   color: #2E2520;
-   text-align: center;
-      @media screen and (min-width:768px) {
-            text-align: start;
-         }
-      
-      @media screen and (min-width:768px) {
-            font-size: 18px;
-         }
-
+.element__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: auto;
+  @media screen and (min-width: 768px) {
+    margin-left: 56px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 64px;
+  }
 }
 .registration__text {
-   margin-bottom: 28px;
+  width: 238px;
+  height: 44px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.22;
+  color: #2e2520;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+.registration__text {
+  margin-bottom: 28px;
 }
 
 /*Форма*/
-.registration__form{
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   margin-top: 50px;
-   @media screen and (min-width:768px) {
-      margin-top: 0;
-   }
+.registration__form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
 }
 
-
-.registration__input::-webkit-input-placeholder{
-   font-family: 'Montserrat';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 16px;
-   line-height: 20px;
-   color: rgba(171, 129, 108, 0.5);
+.registration__input::-webkit-input-placeholder {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: rgba(171, 129, 108, 0.5);
 }
-.registration__input:not(:last-child)  {
-   height: 20px;
-   border: 1px solid rgba(171, 129, 108, 1),;
-   width: 264px;
-   border-top: none;
-   border-left: none;
-   border-right: none;
-   background: rgba(255, 255, 249, 1);
-   @media screen and (min-width:768px) {
-      width: 234px;
-      }
+.registration__input:not(:last-child) {
+  height: 20px;
+  border: 1px solid rgba(171, 129, 108, 1);
+  width: 264px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(255, 255, 249, 1);
+  @media screen and (min-width: 768px) {
+    width: 234px;
+  }
 }
 
 .registration__input:not(:first-of-type) {
-   margin-top: 14px;
-   
+  margin-top: 14px;
 }
 
-.registration__button{
-   position: static;
-   margin-top: 35px;
-   border: none;
-   width: 145px;
-   height: 40px;
-   background: #AB816C;
-   border-radius: 25px;
-   cursor: pointer;
-   font-family: 'Caveat Brush';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 18px;
-   font-size: 24px;
-   line-height: 1.25;
-   text-align: center;
-   color: #FFFFFF;
+.registration__button {
+  position: static;
+  margin-top: 35px;
+  border: none;
+  width: 145px;
+  height: 40px;
+  background: #ab816c;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Caveat Brush';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  color: #ffffff;
 
-   @media screen and (min-width:768px) {
-         position: absolute;
-         margin-top: 0;
-         right: 60px;
-         top: 50%;
-         transform: translateY(-50%);
-         
-      }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    margin-top: 0;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-   @media screen and (min-width:1280px) {
-        position: absolute;
-        right: 104px;
-        top: 50%;
-        transform: translateY(-50%); 
-        font-weight: 400;
-        font-size: 24px;
-        width: 158px;
-        height: 45px;
-      }
-   
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    right: 104px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 400;
+    font-size: 24px;
+    width: 158px;
+    height: 45px;
+  }
 }

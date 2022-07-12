@@ -1,0 +1,51 @@
+.reviews__slider {
+  max-width: 320px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1040px;
+  }
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  & > li {
+    display: none;
+  }
+
+  & > li.slick-active {
+    display: contents;
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    width: 35px;
+    height: 1px;
+    background-color: #ab816c;
+  }
+
+  &::before {
+    margin-right: 12px;
+  }
+
+  &::after {
+    margin-left: 12px;
+  }
+}
+
+.slick-active > button {
+  background-color: transparent;
+  border-color: transparent;
+  color: #ab816c;
+
+  &::after {
+    content: '/5';
+  }
+}
