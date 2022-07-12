@@ -24,7 +24,7 @@
    font-style: normal;
    font-weight: 400;
    font-size: 36px;
-   line-height: 45px;
+   line-height: 1.25;
    color: #2E2520;
 }
 .contact__text{
@@ -33,7 +33,7 @@
    font-style: normal;
    font-weight: 400;
    font-size: 16px;
-   line-height: 22px;
+   line-height: 1.37;
    text-align: center;
    color: #2E2520;
    @media screen and (min-width:1280px) {
@@ -71,7 +71,7 @@
    font-style: normal;
    font-weight: 400;
    font-size: 16px;
-   line-height: 20px;
+   line-height: 1.25;
    color: rgba(171, 129, 108, 0.5);
    text-align: start;
 }
@@ -86,7 +86,7 @@
    font-style: normal;
    font-weight: 400;
    font-size: 18px;
-   line-height: 30px;
+   line-height: 1.66;
    text-align: center;
    color: rgba(255, 255, 255, 1);
    margin-top: 32px;
