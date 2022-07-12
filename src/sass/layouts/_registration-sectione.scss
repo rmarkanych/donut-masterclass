@@ -71,6 +71,7 @@
 
 /*Главный контейнер секции*/
 .registration__container{
+   position: relative;
    display: block;
    padding-top: 82px;
    width: 280px;
@@ -121,14 +122,16 @@
    font-weight: 500;
    font-size: 18px;
    line-height: 1.33;
-   text-align: right;
+   margin: 0 auto;
    color: #2E2520;
    justify-content: center;
    display: flex;
    text-align: center;
+   
    @media screen and (min-width:768px) {
          width: 90px;
          height: 66px;
+         margin: 0;
          
       }
    @media screen and (min-width:768px) {
@@ -147,8 +150,10 @@
    height: 0;
    border: 1px solid #ab816c80;
    position: absolute;
+   top: 158px;
    
    @media screen and (min-width:768px) {
+         top: 120px;
          width: 166px;
          margin-left: -112px;
          transform: rotate(90deg);
@@ -160,7 +165,6 @@
    flex-direction: column;
    justify-content: space-around;
    flex-basis: auto;
-   margin-left: 8px;
       @media screen and (min-width:768px) {
          margin-left: 56px;
       }
@@ -179,9 +183,9 @@
    font-size: 16px;
    line-height: 1.22;
    color: #2E2520;
-   text-align: start;
+   text-align: center;
       @media screen and (min-width:768px) {
-            
+            text-align: start;
          }
       
       @media screen and (min-width:768px) {
@@ -216,11 +220,14 @@
 .registration__input:not(:last-child)  {
    height: 20px;
    border: 1px solid rgba(171, 129, 108, 1),;
-   width: 234px;
+   width: 264px;
    border-top: none;
    border-left: none;
    border-right: none;
    background: rgba(255, 255, 249, 1);
+   @media screen and (min-width:768px) {
+      width: 234px;
+      }
 }
 
 .registration__input:not(:first-of-type) {
