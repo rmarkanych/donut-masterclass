@@ -73,28 +73,28 @@
   text-align: center;
 }
 
-.reviews__switch {
-  margin-bottom: 60px;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: center;
-}
+// .reviews__switch {
+//   margin-bottom: 60px;
+//   font-size: 16px;
+//   line-height: 1.25;
+//   text-align: center;
+// }
 
-.reviews__switch:before,
-.reviews__switch:after {
-  content: '';
-  display: inline-block;
-  height: 5px;
-  border-top: 1px solid #ab816c;
-  top: 0;
-  width: 35px;
-}
-.reviews__switch:before {
-  right: 100%;
-  margin-right: 15px;
-}
+// .reviews__switch:before,
+// .reviews__switch:after {
+//   content: '';
+//   display: inline-block;
+//   height: 5px;
+//   border-top: 1px solid #ab816c;
+//   top: 0;
+//   width: 35px;
+// }
+// .reviews__switch:before {
+//   right: 100%;
+//   margin-right: 15px;
+// }
 
-.reviews__switch:after {
-  left: 100%;
-  margin-left: 15px;
-}
+// .reviews__switch:after {
+//   left: 100%;
+//   margin-left: 15px;
+// }
