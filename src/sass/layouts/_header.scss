@@ -1,5 +1,11 @@
-.header {
+.header__container {
+  position: relative;
   @media screen and(max-width:767px) {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 16px;
     background-repeat: no-repeat;
     background-position: top -6.83px left -12px, top 1.94px left 36.87px,
       top 37.89px left 17.11px, top 53.94px left 73.52px,
@@ -32,49 +38,6 @@
         url(../images/header/header-donut-1-sm@2x.png);
     }
   }
-
-  @media screen and(min-width:1280px) {
-    padding-bottom: 204px;
-    background-repeat: no-repeat;
-    background-position: top 53.09px right 249.86px, top 97.39px right 148.6px,
-      top 279px right 80.59px, top 360.04px right -75px,
-      top -56.08px right 249.86px, top 307.83px right 344.79px,
-      top -170px right -45px, top 410.67px right 411.25px;
-
-    background-size: 322.77px 357.58px, 177.21px 197.78px, 345px 382px,
-      223.09px 246.83px, 175.63px 194.61px, 148.73px 166.13px, 300.62px 333.85px,
-      145.56px 161.39px;
-    box-shadow: inset;
-
-    background-image: url(../images/header/header-donut-8-lg.png),
-      url(../images/header/header-donut-7-lg.png),
-      url(../images/header/header-donut-6-lg.png),
-      url(../images/header/header-donut-5-lg.png),
-      url(../images/header/header-donut-4-lg.png),
-      url(../images/header/header-donut-3-lg.png),
-      url(../images/header/header-donut-2-lg.png),
-      url(../images/header/header-donut-1-lg.png);
-
-    @media screen and(min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/header/header-donut-8-lg@2x.png),
-        url(../images/header/header-donut-7-lg@2x.png),
-        url(../images/header/header-donut-6-lg@2x.png),
-        url(../images/header/header-donut-5-lg@2x.png),
-        url(../images/header/header-donut-4-lg@2x.png),
-        url(../images/header/header-donut-3-lg@2x.png),
-        url(../images/header/header-donut-2-lg@2x.png),
-        url(../images/header/header-donut-1-lg@2x.png);
-    }
-  }
-}
-.header__container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 16px;
 
   @media screen and(min-width:768px) and (max-width: 1279px) {
     align-items: flex-start;
@@ -112,13 +75,61 @@
         url(../images/header/header-donut-1-md@2x.png);
     }
   }
+  // @media screen and(min-width:1280px) {
+  //   align-items: flex-start;
+  //   padding-top: 24px;
+  //   padding-bottom: 50px;
+
+  //   padding-bottom: 204px;
+  //   background-repeat: no-repeat;
+  //   background-position: top 53.09px right 249.86px, top 97.39px right 148.6px,
+  //     top 279px right 80.59px, top 360.04px right -75px,
+  //     top -56.08px right 249.86px, top 307.83px right 344.79px,
+  //     top -170px right -45px, top 410.67px right 411.25px;
+
+  //   background-size: 322.77px 357.58px, 177.21px 197.78px, 345px 382px,
+  //     223.09px 246.83px, 175.63px 194.61px, 148.73px 166.13px, 300.62px 333.85px,
+  //     145.56px 161.39px;
+  //   box-shadow: inset;
+
+  //   background-image: url(../images/header/header-donut-8-lg.png),
+  //     url(../images/header/header-donut-7-lg.png),
+  //     url(../images/header/header-donut-6-lg.png),
+  //     url(../images/header/header-donut-5-lg.png),
+  //     url(../images/header/header-donut-4-lg.png),
+  //     url(../images/header/header-donut-3-lg.png),
+  //     url(../images/header/header-donut-2-lg.png),
+  //     url(../images/header/header-donut-1-lg.png);
+
+  //   @media screen and(min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url(../images/header/header-donut-8-lg@2x.png),
+  //       url(../images/header/header-donut-7-lg@2x.png),
+  //       url(../images/header/header-donut-6-lg@2x.png),
+  //       url(../images/header/header-donut-5-lg@2x.png),
+  //       url(../images/header/header-donut-4-lg@2x.png),
+  //       url(../images/header/header-donut-3-lg@2x.png),
+  //       url(../images/header/header-donut-2-lg@2x.png),
+  //       url(../images/header/header-donut-1-lg@2x.png);
+  //   }
+  // }
+  padding-bottom: 100px;
+}
+.header-img {
+  display: none;
   @media screen and(min-width:1280px) {
-    align-items: flex-start;
-    padding-top: 24px;
-    padding-bottom: 50px;
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    top: 0;
+    width: 716px;
+    height: 946px;
+    top: -175px;
+    right: 0;
   }
 }
-
 .header-burger {
   position: absolute;
   top: 16;
