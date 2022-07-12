@@ -1,28 +1,23 @@
 .btn-scroll {
+  width: 30px;
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  z-index: 20;
-  // width: 100px;
-  // height: 40px;
-  // color: #ffffff;
-  // background-color: var(--style-color);
-  position: fixed;
+  z-index: 7;
   bottom: 5%;
   right: 10%;
   border: none;
   border-radius: 25px;
   transform: translateY(50px);
   cursor: pointer;
-
-  // font-family: 'Caveat Brush';
-  // font-size: 20px;
-  // line-height: 1.27;
   &:hover,
   &:focus {
     transform: translateY(25px);
   }
-  transition: all 0.5s ease;
+  transition: all 1s ease;
+  @media screen and(min-width:768px) {
+    width: 50px;
+  }
 }
 .btn-scroll__active {
   opacity: 1;
