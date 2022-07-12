@@ -1,12 +1,13 @@
 //  import $ from 'jquery';
-$(".container__slider").slick({
- 
+$(".reviews__slider").slick({
+    asNavFor: '.reviews__slider-nav',
   // normal options...
     infinite: true,
     arrows: false,
     slidesToShow: 3,
     slidesToScroll: 1,
-    mobileFirst:true,
+    mobileFirst: true,
+    
 
  
   // the magic
@@ -45,9 +46,6 @@ $(".container__slider").slick({
     }]
 });
 
-$('.reviews_slider').on(
-    'beforeChange', (e, slick, currSlide, nextSlide) => {
-        if (currSlide === nextSlide) { return };
-
-
-    })
+$('.reviews__slider-nav').slick({
+   asNavFor: '.reviews__slider'
+})

@@ -8,6 +8,9 @@
 @import './base/reset';
 @import './base/btn-top';
 
+// Компоненты
+@import './components/slick-slider';
+
 // Страницы
 @import './layouts/header';
 @import './layouts/menu';
@@ -20,4 +23,4 @@
 @import './layouts/contacts-section';
 @import './layouts/footer';
 
-// Компоненты
+
