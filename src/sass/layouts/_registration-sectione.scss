@@ -30,6 +30,7 @@
 
 /*Заголовок*/
 .registration__title {
+  display: none;
   text-align: center;
   font-family: 'Caveat Brush';
   font-style: normal;
@@ -40,6 +41,7 @@
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
+    display: block;
     position: static;
   }
 
@@ -48,6 +50,15 @@
     font-size: 36px;
     line-height: 1.8;
     margin-bottom: 16px;
+  }
+}
+
+.registration__title--mobile {
+  font-size: 24px;
+  line-height: 1.25;
+
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }
 
@@ -73,7 +84,7 @@
 .registration__container {
   position: relative;
   display: block;
-  padding-top: 82px;
+  padding-top: 32px;
   width: 280px;
   height: 436px;
   background: var(--bg-color);
@@ -115,7 +126,10 @@
 }
 
 .date__element {
-  width: 114px;
+  &:first-child {
+    padding-top: 20px;
+  }
+  width: 150px;
   height: 44px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -129,6 +143,10 @@
   text-align: center;
 
   @media screen and (min-width: 768px) {
+    &:first-child {
+      padding-top: 0;
+    }
+    
     width: 90px;
     height: 46px;
     margin: 0;
@@ -186,6 +204,7 @@
   line-height: 1.22;
   color: var(--primary-text-color);
   text-align: center;
+  margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     text-align: start;
     margin-bottom: 16px;
@@ -204,7 +223,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 50px;
+  margin-top: 40px;
   @media screen and (min-width: 768px) {
     margin-top: 0;
   }
@@ -232,12 +251,15 @@
 }
 
 .registration__input:not(:first-of-type) {
+  margin-top: 20px;
+  @media screen and (min-width: 768px) {
   margin-top: 14px;
+  }
 }
 
 .registration__button {
   position: static;
-  margin-top: 35px;
+  margin-top: 32px;
 
   @media screen and (min-width: 768px) {
     position: absolute;
