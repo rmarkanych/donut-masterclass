@@ -20,7 +20,9 @@
     pointer-events: initial;
     top: 0;
   }
-
+  @media screen and (max-width: 1279px) and (orientation: landscape) {
+    overflow-y: auto;
+  }
   @media screen and(min-width:1280px) {
     display: none;
   }
