@@ -166,7 +166,8 @@
   border: var(--input-border);
   position: absolute;
   top: 158px;
-  @media screen and(max-width:768px) {
+
+  @media screen and (max-width:767px) {
     right: 6px;
   }
 
@@ -176,12 +177,14 @@
     transform: rotate(90deg);
     width: 154px;
   }
+
   @media screen and (min-width: 1280px) {
     top: 120px;
     width: 166px;
     margin-left: -112px;
   }
 }
+
 .element__container {
   display: flex;
   flex-direction: column;

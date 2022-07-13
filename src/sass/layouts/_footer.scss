@@ -28,7 +28,20 @@
 .contact-details {
   display: flex;
   justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  @media screen and(min-width:768px) {
+    margin-left: 32px;
+    margin-right: 93px;
+    }
+  
+  @media screen and(min-width:1280px) {
+    margin-left: 123px;
+    margin-right: 320px;
+    }
 }
+
 .contact-details__item {
   display: flex;
 }
