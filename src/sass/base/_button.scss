@@ -19,13 +19,13 @@
 }
 
 .btn-scroll {
-  width: 30px;
+  bottom: 10%;
+  width: 25px;
   position: fixed;
   visibility: hidden;
   opacity: 0;
   z-index: 7;
-  bottom: 5%;
-  right: 10%;
+  right: 3%;
   border: none;
   border-radius: 25px;
   transform: translateY(50px);
@@ -36,7 +36,12 @@
   }
   transition: all 1s ease;
   @media screen and(min-width:768px) {
+    width: 33px;
+    bottom: 10%;
+  }
+  @media screen and(min-width:1280px) {
     width: 50px;
+    bottom: 10%;
   }
 }
 .btn-scroll__active {
