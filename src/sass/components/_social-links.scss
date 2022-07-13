@@ -1,0 +1,16 @@
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.socials__link {
+  display: inline-flex;
+  cursor: pointer;
+  transition: transform var(--primary-animation), fill var(--primary-animation);
+
+  &:hover,
+  &:focus {
+    fill: var(--hover-btn-color);
+    transform: scale(1.3);
+  }
+}

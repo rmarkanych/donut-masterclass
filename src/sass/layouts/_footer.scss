@@ -38,12 +38,13 @@
   font-size: 16px;
   display: inline-flex;
   color: var(--primary-text-color);
-  transition: transform 0.5s ease, color 0.5s ease, fill 0.5s ease;
+  transition: transform var(--primary-animation), color var(--primary-animation),
+    fill var(--primary-animation);
   &:hover,
   &:focus {
     transform: scale(1.3);
-    color: #876655;
-    fill: #876655;
+    color: var(--hover-btn-color);
+    fill: var(--hover-btn-color);
   }
   @media screen and(min-width:1280px) {
     font-size: 20px;

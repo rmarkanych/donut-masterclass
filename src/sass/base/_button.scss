@@ -1,3 +1,23 @@
+.button {
+  cursor: pointer;
+  font-family: 'Caveat Brush';
+  line-height: 1.27;
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+  font-size: 18px;
+  height: 40px;
+  width: 145px;
+  color: #ffffff;
+  background-color: var(--style-color);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+  &:hover,
+  &:focus {
+    background-color: #c09a87;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
 .btn-scroll {
   width: 30px;
   position: fixed;

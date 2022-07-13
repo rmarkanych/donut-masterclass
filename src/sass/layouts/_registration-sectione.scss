@@ -36,7 +36,7 @@
   font-weight: 400;
   font-size: px;
   line-height: 1.8;
-  color: #2e2520;
+  color: var(--primary-text-color);
   margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
@@ -76,9 +76,8 @@
   padding-top: 82px;
   width: 280px;
   height: 436px;
-  background: #fffff9;
-  box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-    4px 4px 4px rgba(171, 129, 108, 0.15);
+  background: var(--bg-color);
+  box-shadow: var(--registration-shadow);
   border-radius: 150px 150px 0 0;
 
   @media screen and (min-width: 768px) {
@@ -91,8 +90,7 @@
     display: flex;
     align-items: center;
     flex-shrink: 3;
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-      4px 4px 4px rgba(171, 129, 108, 0.15);
+    box-shadow: var(--registration-shadow);
     border-radius: 150px;
     transform: none;
   }
@@ -105,8 +103,7 @@
     flex-shrink: 3;
     width: 822px;
     height: 246px;
-    box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
-      4px 4px 4px rgba(171, 129, 108, 0.15);
+    box-shadow: var(--registration-shadow);
     border-radius: 150px;
     transform: none;
   }
@@ -122,7 +119,7 @@
   font-size: 18px;
   line-height: 1.33;
   margin: 0 auto;
-  color: #2e2520;
+  color: var(--primary-text-color);
   justify-content: center;
   display: flex;
   text-align: center;
@@ -143,9 +140,8 @@
 .element__container::before {
   content: '';
   width: 264px;
-
   height: 0;
-  border: 1px solid #ab816c80;
+  border: var(--input-border);
   position: absolute;
   top: 158px;
   @media screen and(max-width:768px) {
@@ -154,7 +150,6 @@
 
   @media screen and (min-width: 768px) {
     top: 120px;
-    // right: 0;
     width: 166px;
     margin-left: -112px;
     transform: rotate(90deg);
@@ -180,7 +175,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.22;
-  color: #2e2520;
+  color: var(--primary-text-color);
   text-align: center;
   @media screen and (min-width: 768px) {
     text-align: start;
@@ -215,7 +210,7 @@
 }
 .registration__input:not(:last-child) {
   height: 20px;
-  border: 1px solid rgba(171, 129, 108, 1);
+  border: var(--input-border);
   width: 264px;
   border-top: none;
   border-left: none;
@@ -233,20 +228,6 @@
 .registration__button {
   position: static;
   margin-top: 35px;
-  border: none;
-  width: 145px;
-  height: 40px;
-  background: #ab816c;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: 'Caveat Brush';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  font-size: 24px;
-  line-height: 1.25;
-  text-align: center;
-  color: #ffffff;
 
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -261,7 +242,7 @@
     right: 104px;
     top: 50%;
     transform: translateY(-50%);
-    font-weight: 400;
+
     font-size: 24px;
     width: 158px;
     height: 45px;

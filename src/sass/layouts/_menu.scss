@@ -11,7 +11,7 @@
   left: 0;
   padding-top: 20px;
 
-  transition: top 0.5s ease;
+  transition: top var(--primary-animation);
   background-color: rgba(254, 243, 228, 0.9);
 
   &.is-open {
@@ -27,16 +27,16 @@
 }
 .header-burger__icon-open {
   opacity: 1;
-  transition: opacity 0.5s ease;
+  transition: opacity var(--primary-animation);
 
   .header-burger.is-open & {
     opacity: 0;
-    transition: opacity 0.5s ease;
+    transition: opacity var(--primary-animation);
   }
 }
 .header-burger__icon-close {
   opacity: 0;
-  transition: opacity 0.5s ease;
+  transition: opacity var(--primary-animation);
 
   .header-burger.is-open & {
     opacity: 1;
@@ -59,10 +59,10 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
-  transition: color 0.5s ease;
+  transition: color var(--primary-animation);
 
   &:hover,
   &:focus {
-    color: #876655;
+    color: var(--hover-btn-color);
   }
 }
