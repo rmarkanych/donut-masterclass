@@ -3,9 +3,11 @@
   margin: 0 auto;
   @media screen and (min-width: 768px) {
     max-width: 768px;
+    min-height: 525px;
   }
   @media screen and (min-width: 1280px) {
     max-width: 1040px;
+    min-height: 725px;
   }
 }
 
@@ -22,22 +24,23 @@
   & > li.slick-active {
     display: contents;
   }
+  @media screen and (max-width: 769px) {
+    &::before,
+    &::after {
+      content: '';
+      width: 35px;
+      height: 1px;
+      background-color: #ab816c;
+    }
 
-  //   &::before,
-  //   &::after {
-  //     content: '';
-  //     width: 35px;
-  //     height: 1px;
-  //     background-color: #ab816c;
-  //   }
+    &::before {
+      margin-right: 12px;
+    }
 
-  //   &::before {
-  //     margin-right: 12px;
-  //   }
-
-  //   &::after {
-  //     margin-left: 12px;
-  //   }
+    &::after {
+      margin-left: 12px;
+    }
+  }
 }
 
 .slick-active > button {
@@ -51,20 +54,25 @@
 }
 
 .slick-arrow {
-  width: 65px;
-  height: 65px;
-  background-color: black;
-  position: absolute;
-  bottom: -143px;
-  right: 50%;
-  background-color: transparent;
-  border: none;
-  font-size: 0;
-  cursor: pointer;
-  z-index: 3;
-  background-image: url(../images/rewievs/next.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    position: absolute;
+    bottom: -185px;
+    right: 50%;
+    background-color: transparent;
+    border: none;
+    font-size: 0;
+    cursor: pointer;
+    z-index: 3;
+    background-image: url(../images/rewievs/next.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @media screen and (min-width: 1280px) {
+    bottom: -143px;
+  }
 }
 
 .slick-arrow:hover {
@@ -80,8 +88,10 @@
 }
 
 .slick-next {
+  display: none;
   transform: translateX(+97px);
 }
 .slick-prev {
+  display: none;
   transform: translateX(-30px);
 }
