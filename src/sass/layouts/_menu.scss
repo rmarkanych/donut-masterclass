@@ -45,8 +45,11 @@
   }
 }
 
-.menu-nav__list {
+.menu-nav {
   margin-top: 40px;
+}
+
+.menu-nav__list {
   display: flex;
   flex-direction: column;
   gap: 40px;
