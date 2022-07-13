@@ -18,11 +18,12 @@
 }
 
 .program__article {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     width: 100%;
 
     @media screen and (min-width: 768px) {
         width: 336px;
+        margin-bottom: 16px;
     }
 
     @media screen and (min-width: 1280px) {
@@ -33,7 +34,7 @@
 .program__title {
     text-align: center;
     margin-bottom: 8px;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 1.25;
 
     @media screen and (min-width: 768px) {
@@ -175,6 +176,7 @@
 }
 
 .program__icon {
+    fill: #674D40;
     width: 19px;
     height: 19px;
 
