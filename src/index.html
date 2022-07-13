@@ -44,25 +44,29 @@
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/header.html"></include>
-    <include src="./partials/menu.html"></include>
-    <include src="./partials/about.html"></include>
-    <include src="./partials/program.html"></include>
-    <include src="./partials/speakers.html"></include>
-    <include src="./partials/price.html"></include>
-    <include src="./partials/reviews.html"></include>
-    <include src="./partials/registration.html"></include>
-    <include src="./partials/contacts.html"></include>
-    <include src="./partials/footer.html"></include>
+    <div class="page">
+      <include src="./partials/header.html"></include>
+      <main>
+        <include src="./partials/menu.html"></include>
+        <include src="./partials/about.html"></include>
+        <include src="./partials/program.html"></include>
+        <include src="./partials/speakers.html"></include>
+        <include src="./partials/price.html"></include>
+        <include src="./partials/reviews.html"></include>
+        <include src="./partials/registration.html"></include>
+        <include src="./partials/contacts.html"></include>
+      </main>
+      <include src="./partials/footer.html"></include>
+    </div>
 
     <!-- slider -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="./js/carusel.js" type="module"></script>
+    <!-- <script src="./js/carusel.js" type="module"></script>
 
     <script src="./js/menu.js" type="module"></script>
     <script src="./js/arrow-to-top.js"></script>
-    <script src="./js/menu-scroll.js"></script>
+    <script src="./js/menu-scroll.js"></script> -->
 
     <script type="module" src="./index.js"></script>
   </body>
