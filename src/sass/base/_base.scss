@@ -77,7 +77,14 @@ img {
 input:not(:placeholder-shown):invalid {
   border-color: red;
 }
+input:not(:placeholder-shown):valid {
+  border-color: green;
+}
 .page {
   position: relative;
   overflow: hidden;
+}
+::selection {
+  color: var(--bg-color);
+  background: var(--style-color);
 }
