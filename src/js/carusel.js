@@ -1,7 +1,6 @@
-//  import $ from 'jquery';
+
 $('.reviews__slider').slick({
   asNavFor: '.reviews__slider-nav',
-  // normal options...
   infinite: true,
   arrows: false,
   slidesToShow: 3,
@@ -14,7 +13,6 @@ $('.reviews__slider').slick({
   autoplaySpeed: 3000,
   speed: 2000,
 
-  // the magic
   responsive: [
     {
       breakpoint: 768,
